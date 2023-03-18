@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function ecrire () {
+console.log("tessssssst ",event.target.id);
+  document.getElementById("v").value = document.getElementById("v").value + event.target.id  ;
+
+}
+function calcul(){
+        document.getElementById("v").value =  eval(document.getElementById("v").value);
+}
+function reset(){
+        document.getElementById("v").value = "";
+}
+
+</script>
+
+</head>
+<body>
+<table>
+  <tr>
+     <td colspan="3" ><input type="text" id="v"  ></td>
+   
+     <td><button onclick="reset()">CE</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="ecrire()" id="1">1</button></td>
+    <td><button onclick="ecrire()" id="2">2</button></td>
+    <td><button onclick="ecrire()" id="3">3</button></td>
+     <td><button onclick="ecrire()" id="+">+</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="ecrire()" id="4">4</button></td>
+    <td><button onclick="ecrire()" id="5">5</button></td>
+    <td><button onclick="ecrire()" id="6">6</button></td>
+     <td><button onclick="ecrire()" id="-">-</button></td>
+  </tr>
+   <tr>
+    <td><button onclick="ecrire()" id="7">7</button></td>
+    <td><button onclick="ecrire()" id="8">8</button></td>
+    <td><button onclick="ecrire()" id="9">9</button></td>
+     <td><button onclick="ecrire()" id="*">*</button></td>
+  </tr>
+   <tr>
+    <td><button onclick="ecrire()" id="0">0</button></td>
+    <td><button onclick="ecrire()" id=".">.</button></td>
+    <td><button onclick="ecrire()" id="/">/</button></td>
+    <td><button onclick="calcul()">=</button></td>
+  </tr>
+</table>
+
+
+
+
+
+ 
+
+</body>
+</html>
